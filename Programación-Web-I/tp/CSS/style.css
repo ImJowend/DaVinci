@@ -1,0 +1,301 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  flex: 1;
+  margin: 0;
+}
+
+footer {
+  /* Estilos del footer (background-color, padding, etc.) */
+}
+
+html{
+  font-size: 62.5%;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form input[type="tel"],
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .banner {
+    background-image:url(https://www.hardgamers.com.ar/public/images/country/ar/stores/integradosargentinos/banner-middle.gif); /* url('Banner_Desktop_HP_Laptop.jpg');*/
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .menu {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 1.5rem;
+  }
+
+  .menu a:hover {
+    background-color: #3d8b40;
+    border-radius: 5px;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  .content-wrap {
+    flex: 1;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+
+  .text-main{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+.about-us{
+  font-size: 1.5rem;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.product-card {
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 150px;
+  margin-bottom: 10px;
+ 
+}
+
+.product-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stock {
+  color: green;
+  font-weight: bold;
+}
+
+.out-of-stock {
+  color: red;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.installments {
+  color: #4CAF50;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+/*contacto
+body {
+  font-family: Arial, sans-serif;
+  background-color: #5AADB7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  position: relative;
+  margin: 5px 0;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  transition: border-color 0.2s;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+}
+
+input.error, textarea.error {
+  border-color: #f44336;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+
+input:focus + label, input:not(:placeholder-shown) + label {
+  font-size: 12px;
+  top: -5px;
+  left: 5px;
+}*/
