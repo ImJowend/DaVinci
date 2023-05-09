@@ -7,70 +7,127 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  font-size: 62.5%;
+  background-color: #D3D3D3;
+  
 }
 
 body {
   flex: 1;
-  margin: 0;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+}
+header {
+  background-color: #87CEFA;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  display: flex; 
+  align-items: center; 
+  
 }
 
-footer {
-  /* Estilos del footer (background-color, padding, etc.) */
+.logo img {
+  width: 200px;
+  height: 200px;
 }
 
-html{
-  font-size: 62.5%;
+.nav-container {
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem; 
+
+}
+
+.nav-menu {
+  list-style: none;
   
-  header {
-    background-color: #333;
-    padding: 1rem;
-  }
+  background-color: #98C1D9;
+  min-height: 2rem;
   
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+}
+
+.nav-menu > li {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-menu > li > a {
+  display: block;
   
-  nav li {
-    margin-right: 1rem;
-  }
+  padding-right: 4rem;
+   
+   padding-left: 4rem ;
+  color: #E0F80A;
+  text-decoration: none;
+}
+
+.nav-menu > li > a:hover {
+  background-color: #555;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #333;
+  list-style: none;
+  padding: 0;
+  min-width: 150px;
+  z-index:  1;
+}
+
+.dropdown-menu > li {
+  display: block;
+}
+
+.dropdown-menu > li > a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-menu > li > a:hover {
+  background-color: #555;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+main {
+  padding: 1rem;
+}
   
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
+h1 {
+  font-size: 2rem;
+}
   
-  main {
-    padding: 1rem;
-  }
+form label {
+  display: block;
+  margin-top: 1rem;
+}
   
-  h1 {
-    font-size: 2rem;
-  }
-  
-  form label {
-    display: block;
-    margin-top: 1rem;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form input[type="password"],
-  form input[type="tel"],
-  form textarea {
-    display: block;
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
-  }
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="tel"],
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
   
   form input[type="submit"] {
     background-color: #333;
@@ -81,7 +138,7 @@ body {
   }
   
   footer {
-    background-color: #333;
+    background-color: #8FBC8F;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -104,37 +161,27 @@ body {
     margin-right: auto;
   }
 
-  .menu {
-    background-color: #4CAF50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-  }
+.menu {
+  background-color: #4CAF50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
 
-  .menu a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
-    font-size: 1.5rem;
-  }
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
 
-  .menu a:hover {
-    background-color: #3d8b40;
-    border-radius: 5px;
-  }
+.menu a:hover {
+  background-color: #3d8b40;
+  border-radius: 5px;
+}
 
-  html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-  }
   
   .content-wrap {
     flex: 1;
@@ -179,9 +226,7 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 150px;
-  margin-bottom: 10px;
- 
+  max-height: 150px; 
 }
 
 .product-name {
@@ -214,88 +259,114 @@ h2 {
   margin-top: 20px;
 }
 
-
-/*contacto
-body {
-  font-family: Arial, sans-serif;
-  background-color: #5AADB7;
+.featured-products-title{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
   color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.form-container {
-  width: 300px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-
-h2 {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.input-wrapper {
-  position: relative;
-  margin: 5px 0;
+.our-difference-title{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 0;
-  border: none;
-  outline: none;
-  box-sizing: border-box;
-  border-bottom: 2px solid #ccc;
-  background-color: transparent;
-  transition: border-color 0.2s;
+.our-difference-subtitle{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
 }
 
-input:focus, textarea:focus {
-  border-color: #4CAF50;
+.our-difference-text{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+  margin-left: 5rem;
 }
 
-input.error, textarea.error {
-  border-color: #f44336;
+.testimonials-section {
+  background-color: #F0F4F8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-textarea {
-  resize: none;
-  min-height: 100px;
+.testimonials-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1140px;
+}
+
+.testimonial-card {
+  background-color: #fff;
   border-radius: 5px;
-  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 1rem;
+  max-width: 350px;
 }
 
-button:hover {
-  opacity: 1;
+.testimonial-text {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
-label {
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  font-size: 16px;
+.testimonial-author {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  text-align: right;
+}
+
+.testimonial-location {
+  font-size: 1.5rem;
   color: #999;
-  pointer-events: none;
-  transition: all 0.2s;
+  text-align: right;
 }
 
-input:focus + label, input:not(:placeholder-shown) + label {
-  font-size: 12px;
-  top: -5px;
-  left: 5px;
-}*/
+.social-icons a img{
+  width: 3rem;
+  height: 3rem;
+  margin: 0 1rem;
+}
+
+.newsletter-social{
+  margin: 2rem;
+}
+footer p{
+  font-size: 2rem;
+}
+
+.difference-card img{
+  width: 2rem;
+  height: 2rem;
+}
+
+.difference-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.difference-card-header {
+  display: flex;
+  align-items:baseline;
+}
+
+.our-difference-text {
+  margin-top: 2rem;
+}
